@@ -1,0 +1,114 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+
+header {
+	color: white;
+}
+
+header .navbar-left span {
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+ul, p, ol, td {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.navbar-inverse .navbar-nav li a {
+	color: #9d9d9d;
+	padding: 15px;
+	
+}
+
+.navbar-inverse .navbar-nav li span {
+	color: #9d9d9d;
+	padding:15px 0px 15px 10px;
+	line-height: 20px;
+}
+
+
+
+.body {
+	margin-top:51px;
+}
+
+p {
+	margin: 0 0 10px 0
+}
+
+.field, .actions {
+	margin-bottom:10px;
+}
+
+table>thead>tr>th {
+	border-bottom: 2px solid #ddd;
+	padding:8px;
+}
+
+
+table>tbody>tr>th, table>tbody>tr>td {
+	padding:8px;
+	border-top: 1px solid #ddd;
+	vertical-align: top;
+	line-height: 1.42857143;
+}
+
+
+
+table {
+	margin-bottom:20px;
+	width: 100%;
+}
+
+a:visited {
+	color:#666;
+}
+
+#error_explanation {
+	
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+	text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+}
+
+.field_with_errors {
+	padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+
+
+
+

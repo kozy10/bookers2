@@ -1,0 +1,38 @@
+
+
+<div class="body">
+	<div class="container">
+		<%= flash[:notice] %>
+		<div class="row">
+			<div class="col-xs-3">
+				<%= render 'users/user_info' %>
+				<%= render 'books/new' %>
+			</div>
+		
+		
+			<div class="col-xs-9">
+				<h2>Book detail</h2>
+				<table>
+					<tbody>
+						<tr>
+							<td><%= attachment_image_tag @user, :profile_image, :fill, 50, 50, format: 'jpeg', fallback: "no_image.jpg" %><br>
+								<%= link_to @user.name, user_path(@user.id), class: "user_#{@user.id}" %>
+							</td>
+							<td><%= link_to @book.title, book_path(@book.id), class: "book_#{@book.id}" %></td>
+							<td><%= @book.opinion %></td>
+							<% if current_user.id == @user.id %>
+							<td><%= link_to "Edit", edit_book_path(@book.id), class: "edit_book_#{@book.id} btn-sm btn-success" %></td>
+							<td><%= link_to "Destroy", book_path(@book.id), method: :delete, data: {confirm: "本当に消しますか?"}, class: "destroy_book_#{@book.id} btn-sm btn-danger" %></td>
+							<% end %>
+
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
