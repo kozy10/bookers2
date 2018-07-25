@@ -18,17 +18,17 @@
           <nav>
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <%= link_to user_path(current_user.id), class: "home" do %><i class="glyphicon glyphicon-home"></i>  Home<% end %>
+                <%= link_to user_path(current_user.id), class: "home" do %><i class="glyphicon glyphicon-home"></i>  ホーム<% end %>
               </li>
 
               <li>
-                <%= link_to users_path, class: "users" do %><i class="glyphicon glyphicon-user"></i>  Users<% end %>
+                <%= link_to users_path, class: "users" do %><i class="glyphicon glyphicon-user"></i>  user一覧<% end %>
               </li>
               <li>
-                <%= link_to books_path, class: "books" do %><i class="glyphicon glyphicon-book"></i>  Books<% end %>
+                <%= link_to books_path, class: "books" do %><i class="glyphicon glyphicon-book"></i>  book一覧<% end %>
               </li>
               <li>
-                <%= link_to destroy_user_session_path, method: :delete, class: "logout" do %><i class="glyphicon glyphicon-log-out"></i>  logout<% end %>
+                <%= link_to destroy_user_session_path, method: :delete, class: "logout" do %><i class="glyphicon glyphicon-log-out"></i>  ログアウト<% end %>
               </li>
             </ul>
           </nav>
@@ -36,16 +36,16 @@
           <nav>
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <%= link_to top_path, class: "top" do %><i class="glyphicon glyphicon-home"></i>  Home<% end %>
+                <%= link_to top_path, class: "top" do %><i class="glyphicon glyphicon-home"></i>  トップ<% end %>
               </li>
               <li>
-                <%= link_to about_path, class: "about" do %><i class="glyphicon glyphicon-link"></i>  About<% end %>
+                <%= link_to about_path, class: "about" do %><i class="glyphicon glyphicon-link"></i>  アバウト<% end %>
               </li>
               <li>
-                <%= link_to new_user_registration_path, class: "sign_up" do %><i class="glyphicon glyphicon-edit"></i>  sign up<% end %>
+                <%= link_to new_user_registration_path, class: "sign_up" do %><i class="glyphicon glyphicon-edit"></i>  サインアップ<% end %>
               </li>
               <li>
-                <%= link_to new_user_session_path, class: "sign_in" do %><i class="glyphicon glyphicon-log-in"></i>  log in<% end %>
+                <%= link_to new_user_session_path, class: "sign_in" do %><i class="glyphicon glyphicon-log-in"></i>  ログイン<% end %>
               </li>
             </ul>
           </nav>
